@@ -1,0 +1,32 @@
+<ion-menu side="start" menuId="menu" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+    <ion-menu-toggle auto-hide="true">
+
+      <ion-item [routerLink]="['home']">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-text >Inicio</ion-text>
+      </ion-item>
+
+      <ion-item [routerLink]="['coches-list']">
+        <ion-icon name="document-text-outline"></ion-icon>
+        Listado de Coches
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="add-circle-outline"></ion-icon>
+        Insertar nuevo coche
+      </ion-item>
+      
+      <ion-item>Menu Item</ion-item>
+      <ion-item>Menu Item</ion-item>
+    </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>

@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <!-- Boton Menu - Mediante el componente Menu -->
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu"></ion-menu-button>
+    </ion-buttons>
+    <!-- Titulo de la Pagina -->
+    <ion-title>Inicio</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <img src="./madison.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Información</ion-card-subtitle>
+      <ion-card-title>Concesionario</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Bienvenido a una aplicacion sobre un concesionario en donde puedes ver los coches que hay disponible,
+      añadir nuevos o modificar sus datos en caso de que quieras ponerlo mas caro.
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <!-- Reproductor de Musica Basico - Mediante el componente Reproductor -->
+    <app-reproductor></app-reproductor>
+  </ion-toolbar>
+</ion-footer>
