@@ -4,14 +4,15 @@ const Op = db.Sequelize.Op;
 
 // Create and Save a new Coche
 exports.create = (req, res) => {
-  // Validate request
-  if (!req.body.brand || !req.body.model){
+  //Validad peticion
+  if(!req.body.marca || !req.body.modelo || !req.body.precio){
     res.status(400).send({
-      message: "¡El contenido no puede estar vacio!"
+        message: "El contenido no puede estar vacio"
     });
-  }
+    return;
+}
 
-  // Create a Coche
+  // Create a Bicycle
   const coche = {
     marca: req.body.marca,
     modelo: req.body.modelo,
@@ -20,12 +21,15 @@ exports.create = (req, res) => {
   }
 
   // Save Bicycle in the database
-  Coche.create(coche).then(data => {
-    res.send(data);
-  }).catch(err => {
-    res.status(500).send({
-      message: err.message || "Algun erro ocurrio mientra se creaba el dato"
-    })
+  Coche.create(coche)
+  .then(data => {
+      res.send(data);
+  })
+  .catch(err => {
+      res.status(500).send({
+          message:
+              err.message || "Ocurrio algun error al crear los datos"
+      });
   });
 };
 

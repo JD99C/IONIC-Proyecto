@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
     const alert = await this.alertController.create({
       header: 'Información sobre el Creador',
       subHeader: '',
-      message: `<img src="${this.imagen}" alt="g-maps" style="border-radius: 2px"> ¡Hola!, Esta es mi aplicación sobre coches, la verdad es que no tuve ninguna inspiración cuando decidí hacerla sobre esto, pero algo tenia que hacer y esto es lo que se me ocurrió. ¡Espero que os guste! :D ` ,
+      message: `<img src="${this.imagen}" alt="g-maps" style="border-radius: 2px"> ¡Hola!, Esta es mi aplicación sobre coches, desarrollada con esfuerzo para que quede muy bien. ¡Espero que les guste! :D` ,
       buttons: ['OK'],
     });
 
