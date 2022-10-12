@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'coches-list',
     loadChildren: () => import('./coches-list/coches-list.module').then( m => m.CochesListPageModule)
   },
+  {
+    path: 'coches-update',
+    loadChildren: () => import('./coches-update/coches-update.module').then( m => m.CochesUpdatePageModule)
+  },
+  {
+    path: 'coches-create',
+    loadChildren: () => import('./coches-create/coches-create.module').then( m => m.CochesCreatePageModule)
+  },
 ];
 
 @NgModule({

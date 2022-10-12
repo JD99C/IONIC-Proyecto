@@ -21,8 +21,14 @@ export class CocheService {
     return this.httpClient.get(this.endpoint);
   }
   //Post Coche
-  createCoche(coche): Observable<any> {
-    return this.httpClient.post(this.endpoint , JSON.stringify(coche), this.httpOptions)
+  createCoche(coche, blob){
+    let formData = new FormData();
+    formData.append("marca", coche.marca);
+    formData.append("modelo", coche.modelo);
+    formData.append("precio", coche.precio)
+    formData.append("file", blob);
+
+    return this.httpClient.post(this.endpoint, formData);
   }
 
   updateCoche(id, coche): Observable<any> {
