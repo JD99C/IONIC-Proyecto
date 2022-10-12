@@ -1,6 +1,11 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>coches-create</ion-title>
+    
+    <ion-buttons>
+      <ion-back-button defaultHref="/"></ion-back-button>
+      <ion-title >Insertar Coche </ion-title>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
@@ -16,15 +21,15 @@
       <ion-col size="6">
         <ion-button color="primary" fill="outline" (click)="takePhoto()">
           <ion-icon slot="start" name="camera-outline"></ion-icon>
-          Take a photo
+          Sacar Foto
         </ion-button>
         <ion-button color="primary" fill="outline" (click)="pickImage()">
           <ion-icon slot="start" name="image-outline"></ion-icon>
-          Pick an image
+          Coger Imagen
         </ion-button>
         <ion-button color="danger" fill="outline" (click)="discardImage()">
           <ion-icon slot="start" name="aperture"></ion-icon>
-          Discard image
+          Borrar Imagen
         </ion-button>
       </ion-col>
     </ion-row>
@@ -35,20 +40,20 @@
       <ion-label position="floating">Marca</ion-label>
       <ion-input formControlName="marca" type="text" required></ion-input>
     </ion-item>
-    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.marca.errors?.required">Brand is required.</span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.marca.errors?.required">Marca es necesaria.</span>
     <ion-item lines="full">
       <ion-label position="floating">Modelo</ion-label>
       <ion-input formControlName="modelo" type="text" required></ion-input>
     </ion-item>
-    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.modelo.errors?.required">Model is required.</span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.modelo.errors?.required">Modelo es necesario.</span>
     <ion-item lines="full">
       <ion-label position="floating">Precio en €</ion-label>
       <ion-input formControlName="precio" type="number" required></ion-input>
     </ion-item>
-    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.precio.errors?.required">Precio is required.</span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.precio.errors?.required">Precio es necesario.</span>
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="primary" expand="block">Submit</ion-button>
+        <ion-button type="submit" color="primary" expand="block">Insertar</ion-button>
       </ion-col>
     </ion-row>
   </form>

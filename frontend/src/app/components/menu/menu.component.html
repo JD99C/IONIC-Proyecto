@@ -9,19 +9,19 @@
     <ion-list>
     <ion-menu-toggle auto-hide="true">
 
-      <ion-item [routerLink]="['home']">
+      <ion-item  class="inicio">
         <ion-icon name="home-outline"></ion-icon>
-        <ion-text >Inicio</ion-text>
+        <ion-button [routerLink]="['home']" fill="clear">Inicio</ion-button>
       </ion-item>
 
-      <ion-item [routerLink]="['coches-list']">
+      <ion-item >
         <ion-icon name="document-text-outline"></ion-icon>
-        Listado de Coches
+        <ion-button [routerLink]="['coches-list']" fill="clear">Listado de Coches</ion-button>
       </ion-item>
 
-      <ion-item [routerLink]="['coches-create']">
+      <ion-item >
         <ion-icon name="add-circle-outline"></ion-icon>
-        Insertar nuevo coche
+        <ion-button [routerLink]="['coches-create']" fill="clear">Insertar nuevo coche</ion-button>
       </ion-item>
       
       <ion-item>
