@@ -1,32 +1,32 @@
 <ion-menu side="start" menuId="menu" contentId="main">
   <ion-header>
-    <ion-toolbar color="primary">
-      <ion-title>Menu</ion-title>
+    <ion-toolbar color="secondary">
+      <ion-title color="primary">Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  
   <ion-content>
     <ion-list>
     <ion-menu-toggle auto-hide="true">
 
-      <ion-item  class="inicio">
+      <ion-item  class="inicio" >
         <ion-icon name="home-outline"></ion-icon>
-        <ion-button [routerLink]="['home']" fill="clear">Inicio</ion-button>
+        <ion-button [routerLink]="['portada']" fill="clear" color="secondary">Portada</ion-button>
       </ion-item>
 
       <ion-item >
         <ion-icon name="document-text-outline"></ion-icon>
-        <ion-button [routerLink]="['coches-list']" fill="clear">Listado de Coches</ion-button>
+        <ion-button [routerLink]="['coches-list']" fill="clear" color="secondary">Listado de Coches</ion-button>
       </ion-item>
 
       <ion-item >
         <ion-icon name="add-circle-outline"></ion-icon>
-        <ion-button [routerLink]="['coches-create']" fill="clear">Insertar nuevo coche</ion-button>
+        <ion-button [routerLink]="['coches-create']" fill="clear" color="secondary">Insertar nuevo coche</ion-button>
       </ion-item>
       
       <ion-item>
         <ion-icon name="information-circle-outline"></ion-icon>
-        <ion-button (click)="presentAlert()" fill="clear">Información del creador</ion-button>
+        <ion-button (click)="presentAlert()" fill="clear" color="secondary">Información del creador</ion-button>
       </ion-item>
 
     </ion-menu-toggle>

@@ -11,7 +11,7 @@ export class ReproductorComponent implements OnInit {
   reproduciendo: boolean = false;
 
   constructor() { 
-    this.audio.src='../../../assets/audio/NineThou.mp3'
+    this.audio.src='../../../assets/audio/パラサイト -Instrumental-.mp3'
     this.audio.load();
   }
 

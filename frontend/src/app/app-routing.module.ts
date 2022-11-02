@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'portada',
     pathMatch: 'full'
   },
   {
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'coches-create',
     loadChildren: () => import('./coches-create/coches-create.module').then( m => m.CochesCreatePageModule)
+  },
+  {
+    path: 'portada',
+    loadChildren: () => import('./portada/portada.module').then( m => m.PortadaPageModule)
   },
 ];
 

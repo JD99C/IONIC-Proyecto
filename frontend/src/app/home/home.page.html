@@ -1,22 +1,22 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar  color="secondary">
     <!-- Boton Menu - Mediante el componente Menu -->
     <ion-buttons slot="start">
       <ion-menu-button menu="menu"></ion-menu-button>
     </ion-buttons>
     <!-- Titulo de la Pagina -->
-    <ion-title>Inicio</ion-title>
+    <ion-title color="primary">Inicio</ion-title>
 
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
 
  
 
-  <div style="height: 100%; display: flex; align-items: center; justify-content: center;">
-    <ion-card>
-      <img src="../../assets/imagen/autos.jpg" alt="Imagen con ruedas de coche" />
+  <div style="height: 100%; display: flex; align-items: center; justify-content: center;" id="container">
+    <ion-card  color="secondary">
+      <img src="../../assets/imagen/mustang.gif" alt="Imagen con ruedas de coche" />
       <ion-card-header>
         <ion-card-subtitle>Información</ion-card-subtitle>
         <ion-card-title>Concesionario</ion-card-title>
@@ -24,14 +24,17 @@
       <ion-card-content>
         Bienvenido a una aplicacion sobre un concesionario en donde puedes ver los coches que hay disponible,
         añadir nuevos o modificar sus datos en caso de que quieras ponerlo mas caro.
+        <h1></h1>
+        <ion-button (click)="onClick()" expand="block" shape="round" fill="outline">Comenzar</ion-button>
       </ion-card-content>
     </ion-card>
   </div>
 
+
 </ion-content>
 
 <ion-footer>
-  <ion-toolbar>
+  <ion-toolbar  color="secondary">
     <!-- Reproductor de Musica Basico - Mediante el componente Reproductor -->
     <app-reproductor></app-reproductor>
   </ion-toolbar>

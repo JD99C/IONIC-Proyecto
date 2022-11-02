@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActionSheetController, MenuController } from '@ionic/angular';
+import { ActionSheetController, IonicModule, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -13,4 +13,5 @@ export class HomePage {
   onClick(){
     this.menuCtrl.toggle();
   }
+
 }

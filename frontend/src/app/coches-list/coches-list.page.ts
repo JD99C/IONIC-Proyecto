@@ -48,5 +48,23 @@ export class CochesListPage implements OnInit {
       event.target.complete(this.ionViewDidEnter);
     }, 2000);
   }
+
+  buscar(event){
+    
+    //set cal to the value of the searchbar
+    const val = event.target.value;
+
+    //if the value is an empty string don´t filter the items
+    if(val && val.trim() !== ''){
+      this.coches = this.coches.filter((item) => {
+        return (item.marca.toLowerCase().indexOf(val.toLowerCase()) > -1);
+
+      });
+    }else{
+      //Reset items back to all of the items
+      this.getAllCoches();
+    }
+
+  }
 }
 
