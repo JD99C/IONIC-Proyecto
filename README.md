@@ -1,7 +1,6 @@
 # Proyecto - Convocatoria 1
 
-Este proyecto es una pequeña aplicación de un concesionario para la convocatoria 1 de la asignatura PGL. En este proyecto realiza un Get, Post, Delete, Update con 
-imagenes incluidas.
+Este proyecto es una pequeña aplicación de un concesionario para la convocatoria 1 de la asignatura PGL. En este proyecto realiza un Get, Post, Delete, Update, con imagenes incluidas.
 
 ## Comenzando 🏎
 
@@ -90,21 +89,21 @@ Con esto ya nos abriría el proyecto en nuestro navegador y podremos probarlo
 
 Una vez que nuestra base de datos este lista y el proyecto abierto en nuestro navegador, ya podemos usarlo para ver como funciona:
 
-Lo primero que ponemos ver es la portada le daremos al botón "Empezar" (se escuchara un sonido si tenemos el volumen subido).
+Lo primero que podemos ver es la portada le daremos al botón "Empezar" (se escuchará un sonido si tenemos el volumen subido).
 
-Ahora veremos la ventana de inicio y aquí podemos ver una explicación de la aplicación y pequeño reproductor de una canción por si quieres ponerla de fondo mientras usas la aplicación.
+Ahora veremos la ventana de inicio y aquí podemos ver una explicación de la aplicación y un pequeño reproductor de una canción por si quieres ponerla de fondo mientras usas la aplicación.
 
 Si vamos al menú pinchando en el botón "Comenzar" o en la parte superior izquierda podemos ver dintintos items para desplazarlos por la app.
 
-En el menú si pinchamos en el ítem de "Información del creador" nos aparecerá una alerta en donde pone un mensaje recordando que me he esforzado para que quede bien la aplicación y también para poner una imagen en la alerta ya que es algo que quería probar.
+En el menú si pinchamos en el ítem de "Información del creador" nos aparecerá una alerta en donde pone un mensaje recordando el esfuerzo que ha hecho para que quede bien la aplicación y también para poner una imagen en la alerta ya que es algo que quería probar :D .
 
-Ahora si pinchamos en "Insertar Nuevo Coche" se nos abrirá una pagina en donde podemos introducir los datos de un coche y incluso sacarle una foto y subirla a nuestra base de datos. Una vez introduzcas un  coche nos llevara al listado de coches (Que también se puede acceder desde el menú de inicio).
+Ahora si pinchamos en "Insertar Nuevo Coche" se nos abrirá una pagina en donde podemos introducir los datos de un coche y incluso sacarle una foto y subirla a nuestra base de datos. Una vez introduzcas un coche nos llevara al listado de coches (Que también se puede acceder desde el menú de inicio).
 
-Una vez en el listado de coches nos debe de aparecer los coches qui hallamos insertado hay podemos varias cosas:
+Una vez en el listado de coches nos debe de aparecer los coches que hallamos insertado ahí podemos hacer varias cosas:
 
 * Buscar los coches que queramos mediante su marca mediante la barra de busqueda
-* Editar el coche que queramos por si quieres ponerle un precio mas caro mediante el botón del lápiz en gris
-* Eliminar un coche con el boton de la papelera en rojo
+* Editar el coche que queramos por si quieres ponerle un precio más caro mediante el botón del lápiz en gris
+* Eliminar un coche con el botón de la papelera en rojo
 * Insertar otro mediante el botón flotante abajo a la derecha 
 
 ## Enlace a POSTMAN con los accesos a los end-points 🔌
