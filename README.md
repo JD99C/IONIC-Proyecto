@@ -60,9 +60,10 @@ Ahora pasamos al proyecto para poder ejecutar nuestra aplicación.
 
 * cd backend/
 
-después de entrar en la carpeta ponemos este otro código:
+después de entrar en la carpeta ponemos estos 2 código (tardara un poco):
 
 * npm install
+* npm install multer
 
 y por ultimo escribimos este ultimo codigo:
 
@@ -84,18 +85,27 @@ Una vez termine de instalar las librerías usamos este ultimo código para ejecu
 
 Con esto ya nos abriría el proyecto en nuestro navegador y podremos probarlo
 
-FALTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA EXPLICAR COMO USARLO EN ANDROID STUDIO
-
 
 ## Ejecutando las pruebas ⚙️
 
 Una vez que nuestra base de datos este lista y el proyecto abierto en nuestro navegador, ya podemos usarlo para ver como funciona:
 
-Lo primero que ponemos ver es la ventana principal y si nos fijamos en la parte superior veremos un boton de menu. 
+Lo primero que ponemos ver es la portada le daremos al botón "Empezar" (se escuchara un sonido si tenemos el volumen subido).
 
-Primero pincharemos 
+Ahora veremos la ventana de inicio y aquí podemos ver una explicación de la aplicación y pequeño reproductor de una canción por si quieres ponerla de fondo mientras usas la aplicación.
 
-FALTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Si vamos al menú pinchando en el botón "Comenzar" o en la parte superior izquierda podemos ver dintintos items para desplazarlos por la app.
+
+En el menú si pinchamos en el ítem de "Información del creador" nos aparecerá una alerta en donde pone un mensaje recordando que me he esforzado para que quede bien la aplicación y también para poner una imagen en la alerta ya que es algo que quería probar.
+
+Ahora si pinchamos en "Insertar Nuevo Coche" se nos abrirá una pagina en donde podemos introducir los datos de un coche y incluso sacarle una foto y subirla a nuestra base de datos. Una vez introduzcas un  coche nos llevara al listado de coches (Que también se puede acceder desde el menú de inicio).
+
+Una vez en el listado de coches nos debe de aparecer los coches qui hallamos insertado hay podemos varias cosas:
+
+* Buscar los coches que queramos mediante su marca mediante la barra de busqueda
+* Editar el coche que queramos por si quieres ponerle un precio mas caro mediante el botón del lápiz en gris
+* Eliminar un coche con el boton de la papelera en rojo
+* Insertar otro mediante el botón flotante abajo a la derecha 
 
 ## Enlace a POSTMAN con los accesos a los end-points 🔌
 
