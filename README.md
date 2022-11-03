@@ -15,7 +15,7 @@ Programas necesarios para usar el proyecto:
 * Node.js
 * MySQL Server y MySQL Workbench (La version que uso es la MySQL Workbench 8.0 CE)
 * Postman
-* Android Studio
+* Android Studio (Por si quieres usarla en un dispositivo físico)
 
 Básicamente todas estas aplicaciones te las descargas de sus respectivas paginas oficiales y las instalas normal. 
 
@@ -109,9 +109,9 @@ Una vez en el listado de coches nos debe de aparecer los coches qui hallamos ins
 
 ## Enlace a POSTMAN con los accesos a los end-points 🔌
 
-FALTAAAAAAAAAAAAAAAAAAAAAAAAAA
+https://documenter.getpostman.com/view/23450722/2s8YY9w6zC
 
-Aqui denjo el enlace a postman donde continene todos los accesos para poder hacer los end-point de la aplicacion sin tener que entrar en ella.
+Aqui dejo el enlace a postman donde continene todos los accesos para poder hacer los end-point de la aplicacion sin tener que entrar en ella.
 
 ## Construido con 🛠️
 
