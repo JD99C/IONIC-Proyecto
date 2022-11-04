@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular';
 import { CocheService } from '../services/coche.service';
 
 @Component({
@@ -11,7 +12,7 @@ export class CochesListPage implements OnInit {
 
   coches:any = [ ]
 
-  constructor(private cocheService: CocheService, private router: Router) { }
+  constructor(private cocheService: CocheService, private router: Router ,private alertController: AlertController) { }
 
   ngOnInit() {
     this.getAllCoches();
@@ -29,17 +30,41 @@ export class CochesListPage implements OnInit {
     })
   }
 
-  removeCoche(coche, i) {
-    if (window.confirm('¿Estas seguro de eliminar?')) {
-      this.cocheService.deleteCoche(coche.id)
-      .subscribe(() => {
+
+  handlerMessage = '';
+  roleMessage = '';
+
+
+async removeCoche(coche, i) {
+
+  const alert = await this.alertController.create({
+    header: '¿Quieres Borrar?',
+    buttons: [
+      {
+        text: 'Cancel',
+        role: 'cancel',
+      },
+      {
+        text: 'OK',
+        role: 'confirm',
+        handler: () => {
+          this.cocheService.deleteCoche(coche.id)
+          .subscribe(() => {
           this.ionViewDidEnter();
           
           console.log('Dato eliminado!')
         }
       )
-    }
+        },
+      },
+    ],
+  });
+
+    await alert.present();
   }
+
+ 
+
 
   doRefresh(event){
     this.getAllCoches();
