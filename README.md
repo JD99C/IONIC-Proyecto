@@ -51,7 +51,7 @@ Ahora pasamos al proyecto para poder ejecutar nuestra aplicación.
 
 ### PARTE 2 - Ejecucion de la aplicación
 
-1º Una vez te hayas descargado el proyecto, abre la carpeta “Proyecto” con Visual Studio Code. 
+1º Una vez te hayas descargado el proyecto, abre la carpeta “IONIC-Proyecto-main” con Visual Studio Code. 
 
 2º Una vez abierto el proyecto con el Visual Studio Code, abre 2 terminales (Para abrirlo en Visual Studio Code con "CTRL+ñ" se te abre uno, para añadir el otro es pulsando en el + )
 
